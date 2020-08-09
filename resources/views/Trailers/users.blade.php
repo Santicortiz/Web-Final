@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -16,15 +15,17 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="all">
     <div class="main-trailers">
-      
 <table class="table">
     <thead class="thead">
+   
         <tr>
             <th>ID<th>
             <th>Titulo</th>
             <th>Descripcion</th>
+           
         </tr>
     </thead>
 
@@ -32,10 +33,10 @@
         @foreach ($trailers as $trailers)
         <tr>
             <td>{{$loop->iteration}}</td>
-            <td><a href="{{asset('storage').'/'.$trailers->Trailer}}">
-            <img src="{{asset('storage').'/'.$trailers->Portada}}" alt="" class="img-port"></a></td>
+            <td><a href="{{asset('storage').'/'.$trailers->Trailer}}"><img src="{{asset('storage').'/'.$trailers->Portada}}" alt="" class="img-port"></a></td>
             <td>{{$trailers->Titulo}}</td>
             <td>{{$trailers->Descripcion}}</td>
+            <td>
         @endforeach
      
     </tbody>

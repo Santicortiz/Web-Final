@@ -8,7 +8,7 @@
 
                     <div class="access-btn">
                         <a href="{{ url('/Trailers') }}" class="btn btn-log">Admin</a>
-                        <a href="{{url('Trailers/users')}}" class="btn btn-log">User</a>
+                        <a href="{{ url('/Trailers/users/list')}}" class="btn btn-log">User</a>
                     </div>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

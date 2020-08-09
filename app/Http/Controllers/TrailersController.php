@@ -33,10 +33,10 @@ class TrailersController extends Controller
         return view('Trailers.create');
     }
 
-    public function usuarios()
+    public function users()
     {
-        //
-        return view('Trailers.users');
+        $datos['trailers']=Trailers::paginate(10);
+        return view('Trailers.users',$datos);
     }
 
     public function login()

@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('login', function () {
-    return "Esto es una vista para que se muestra la maldita vaina esa";
-});
 //Route::get('/Trailers','TrailersController@index');
 //Route::get('/Trailers/create','TrailersController@create');
 
@@ -34,9 +31,68 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('start', 'TrailersController@start')->name('start');
 Route::get('logout','TrailersController@logout')->name('logout');
 
-Route::get('/Public','TrailersController@start');
+/*Route::get('/Trailers/users','TrailersController@users');*/
+  /*  return view('users');*/
 
-Route::get('/Trailers/users', 'TrailersController@usuarios');
-Route::get('/Trailers/users', function () {
-    return view('users');
-});
+Route::get('/Trailers/users/list','TrailersController@users');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

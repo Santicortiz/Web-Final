@@ -20,6 +20,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="all">
     <div class="main-trailers">
         <!--div class="row"-->
