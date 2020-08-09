@@ -1,0 +1,190 @@
+@import "signup.css";
+@import "begin.css";
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--fontfam-fjalla);
+}
+:root{
+    --clr-dark-blue:#020065;
+    --trs-4s:.4s ease-in-out;
+    --clr-lig-blue:rgb(0, 38, 255);
+    --clr-green:#00bb64;
+}
+/**typography */
+.--blue{
+    color:rgb(38, 14, 173);
+    text-transform: uppercase;
+}
+/*****************
+ * NAV
+*/
+nav{
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color:rgb(0, 38, 255);
+    align-items: center;
+    padding: .8rem 3rem;
+}
+.logo a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5px;    
+    padding: .5rem 1rem;
+}
+.logo::first-letter{font-size: 30px;}
+
+.nav-links{
+    display: flex;
+}
+.nav-links li {
+    padding: .5rem 2rem;
+    list-style: none;
+    transition: .3s ease-in;
+}
+.nav-links a{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.nav-links li:hover{
+    background-color: var(--clr-lig-blue);
+    box-shadow:inset 0 0 30px rgb(0, 19, 129);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*-----------
+ * FORM NAV
+ *----------*/
+input{
+    padding: .6rem;
+    background-color: #e2e2e2c7;
+    border-radius:5px;
+    border: none;
+    transition: background 250ms ease;
+    font-size: 14px;
+}
+input:focus{
+    outline: none !important;
+    background-color: #fdfdfdec
+}
+.btn {
+    background: none;
+    border: 2px solid rgba(209, 209, 209, 0.795);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all var(--trs-4s);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.btn-sign a{
+    color: white;
+    text-decoration: none;
+}
+.btn-out:hover,
+    .btn-out:focus{
+    background-color: #d60000;
+    border: 2px solid #d60000;
+    outline: none !important;
+}
+.btn-log:hover{
+    background-color:var(--clr-green);
+    border: 2px solid var(--clr-green);;
+}
+.btn-sign:hover{
+    background-color: rgb(0, 150, 250);
+    border: 2px solid rgb(0, 150, 250);
+}
+
+/*------------------*/
+
+.nav-dropdown{
+    color:white;
+    text-decoration: none;
+    letter-spacing:2px;
+    cursor: default;
+}
+.nav-logout a{
+    border:2px solid rgb(238, 238, 238);
+    padding: .5rem 1rem;
+    color:white;
+    border-radius:5px;
+    text-decoration: none;
+    transition:.4s ease-in-out;
+    margin:0 0 0 1rem;
+}
+.nav-logout a:hover{
+    background: rgb(219, 0, 0);
+    border:2px solid rgb(216, 0, 0);
+}
+.main-user{
+    display:flex;
+}
+/***-------------------- */
+
+.main-access{
+    background:rgb(240, 240, 240);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:30%;
+    padding:2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px white;
+    text-align:center;
+}
+.access-text{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    padding:.5rem
+}
+.access-label{
+    padding: .5rem;
+    letter-spacing: 2px;
+}
+.access-label input{
+    width:70%;
+    font-size: 16px;
+    background:rgb(228, 228, 228);
+    border:2px solid rgb(160, 160, 160)
+}
+.access-check{
+    margin:2rem .5rem
+}
+.access-btn{
+    margin:1rem 0 0;
+}
+.access-btn .btn-log{
+    width:40%;
+    padding:1rem;
+    background:var(--clr-green);
+    border:var(--clr-green);
+    text-decoration: none;
+    border: 2px solid var(--clr-green)
+}
+.access-btn .btn-log:hover{
+    background: none;
+    color:var(--clr-green)
+}
+
+
+
+

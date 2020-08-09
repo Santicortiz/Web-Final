@@ -1,0 +1,22 @@
+.footer{
+    background:rgb(238, 238, 238);
+    opacity:.9;
+    padding: 2rem;
+    text-align: center;
+    color: #1a1624;
+}
+.footer h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.footer h3::first-letter{
+    font-size: 30px;
+}
+.footer p{
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}

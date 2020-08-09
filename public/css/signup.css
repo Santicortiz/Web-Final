@@ -1,0 +1,55 @@
+@import "begin.css";
+
+.main-page{
+    background: linear-gradient(40deg,#0200948a ,
+    rgba(2, 2, 2, 0.479)),
+    url("https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?cs=srgb&dl=food-snack-popcorn-movie-theater-33129.jpg&fm=jpg");
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 4rem;
+}
+.main-sign h1{
+    color: white;
+    text-align: start;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.main-sign{
+    position: absolute;
+    background:#01002270;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 450px;
+    border-radius: 5px;
+    text-align:center;    
+}
+.form-signup{
+    padding: 1.5rem 0;
+}
+.inp-sign{
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1rem;
+}
+
+.form-signup p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(230, 230, 230);
+    text-align: start;
+}
+.form-signup .btn-log{
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 16px;
+}
